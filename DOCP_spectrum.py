@@ -42,7 +42,7 @@ def DOCP_spectrum(Ex, Ey, Phix, Phiy):
 
 if __name__ == "__main__":
     # import E, Phi from csv files
-    filename = r"C:\Users\konisi\OneDrive - 中央大学\ドキュメント\研究データ\20251204\Y_Transmission\THzLambdaShift_1G38p7um_flat_Transmission_Y.csv"
+    filename = r"D:\研究データ\RA発表会\Transmission_Y.csv"
     data = np.loadtxt(filename, delimiter=',', skiprows=1)
     frequency = data[:, 0]
     Ex = data[:, 1]
