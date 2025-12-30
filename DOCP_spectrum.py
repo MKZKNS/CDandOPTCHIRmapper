@@ -72,7 +72,7 @@ if __name__ == "__main__":
     plt.plot(frequency, Phix, label=r'$\phi_x$')
     plt.plot(frequency, Phiy, label=r'$\phi_y$')
     plt.xlabel(f'Frequency [{freq_unit}]')
-    plt.ylabel('Phase (degrees)')
+    plt.ylabel('Phase [degrees]')
     plt.title('Phase of Electric Field Components')
     plt.legend()
     plt.grid()
