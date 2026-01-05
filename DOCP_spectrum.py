@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import config
 
 def DOCP_spectrum(Ex, Ey, Phix, Phiy):
     """
@@ -42,7 +43,7 @@ def DOCP_spectrum(Ex, Ey, Phix, Phiy):
 
 if __name__ == "__main__":
     # import E, Phi from csv files
-    filename = r"D:\研究データ\20251230_thzBEshift_woBowtie\circle_aperture_Ypol.csv"
+    filename = config.DOCP_SPECTRUM_DATA_PATH
     data = np.loadtxt(filename, delimiter=',', skiprows=1)
     head = np.loadtxt(filename, delimiter=',', max_rows=1, dtype=str)
     # pickup frequency unit
